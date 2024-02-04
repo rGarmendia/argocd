@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-basics-test
+  namespace: app-basics-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-basics-test
+  template:
+    metadata:
+      labels:
+        app: app-basics-test
+    spec:
+      containers:
+      - name: app-basics-test
+        image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+        ports:
+        - containerPort: 8080
+---

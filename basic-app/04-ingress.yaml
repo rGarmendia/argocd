@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-basics-test
+  namespace: app-basics-test
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: app-basics-test.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: app-basics-test
+            port:
+              number: 8080
+
