@@ -6,8 +6,7 @@ metadata:
 spec:
   selector:
     app: app-basics-test
-  type: NodePort
+  type: ClusterIP
   ports:
   - protocol: TCP
     port: 8080
-    nodePort: 30950
