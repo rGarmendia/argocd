@@ -1,5 +1,4 @@
-namespace: dev-app-basics-test
-
+namespace: dev
 deployment:
   replicas: 2
   container:

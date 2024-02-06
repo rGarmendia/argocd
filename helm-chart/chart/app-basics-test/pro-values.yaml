@@ -1,4 +1,4 @@
-namespace: pro-app-basics-test
+namespace: pro
 
 deployment:
   replicas: 2

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-basics-test-dev
+  name: app-basics-test-pro
   namespace: argocd
 spec:
   project: default
@@ -11,10 +11,10 @@ spec:
     path: helm-chart/chart/app-basics-test
     helm:
       valueFiles:
-        - dev-values.yaml
+        - pro-values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: pro
   syncPolicy:
     automated:
       prune: true
