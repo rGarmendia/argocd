@@ -1,0 +1,27 @@
+namespace: app-basics-test
+
+deployment:
+  name: app-basics-test
+  replicas: 1
+  container:
+    name: app-basics-test
+    image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+    port: 8080
+  resources:
+    requests:
+      memory: "64Mi"
+      cpu: "250m"
+    limits:
+      memory: "128Mi"
+      cpu: "500m"
+
+service:
+  name: app-basics-test
+  port: 80
+  namespace: app-basics-test
+  type: ClusterIP
+
+ingress:
+  name: app-basics-test-ingress
+  host: app-basics-test.local
+  path: /

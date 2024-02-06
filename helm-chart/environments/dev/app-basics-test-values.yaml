@@ -1,0 +1,9 @@
+namespace: dev-app-basics-test
+
+deployment:
+  replicas: 2
+  container:
+    image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
+
+ingress:
+  host: dev.app-basics-test.local
