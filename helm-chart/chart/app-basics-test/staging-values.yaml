@@ -1,0 +1,9 @@
+namespace: staging-app-basics-test
+
+deployment:
+  replicas: 2
+  container:
+    image: us-docker.pkg.staging/google-samples/containers/gke/hello-app:2.0
+
+ingress:
+  host: staging.app-basics-test.local
