@@ -1,19 +1,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: app-basics-test
-  namespace: app-basics-test
+  name: argocd-server-ingress
+  namespace: argocd
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: app-basics-test.example.com
+  - host: argocd.test.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: app-basics-test
+            name: argocd-server
             port:
-              number: 8080
-
+              number: 80
