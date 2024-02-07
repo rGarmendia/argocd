@@ -10,14 +10,14 @@ service:
 
 ingress:
   host: pro.icarus-lab.org
-  certificate: letsencrypt-pro
+  certificate: certificate-letsencrypt-pro
 
 issuer:
   name: letsencrypt-pro
   server: https://acme-v02.api.letsencrypt.org/directory
   email: rdgc91@gmail.com
   privateKeySecretRef:
-    name: letsencrypt-pro
+    name: secret-letsencrypt-pro
   ingress:
     class: ingress-nginx
   secretName: letsencrypt-pro
