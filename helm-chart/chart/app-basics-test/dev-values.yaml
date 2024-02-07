@@ -19,7 +19,7 @@ issuer:
   server: https://acme-v02.api.letsencrypt.org/directory
   email: rdgc91@gmail.com
   privateKeySecretRef:
-    name: secret-letsencrypt-dev
+    name: privatekey-letsencrypt-dev
   ingress:
     class: ingress-nginx
-  secretName: letsencrypt-dev
+  secretName: secret-letsencrypt-dev
