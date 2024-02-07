@@ -4,6 +4,11 @@ metadata:
   name: {{ .Values.ingress.name }}
   namespace: {{ .Values.namespace }}
 spec:
+  tls:
+  - hosts:
+    - {{ .Values.ingress.host }}
+    secretName: {{ .Values.ingress.certificate }}
+
   ingressClassName: ingress-nginx
   rules:
   - host: {{ .Values.ingress.host }}
