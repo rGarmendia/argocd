@@ -17,6 +17,7 @@ deployment:
 service:
   name: app-basics-test
   port: 80
+  targetPort: 8080
   type: ClusterIP
 
 ingress:
