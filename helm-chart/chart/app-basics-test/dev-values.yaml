@@ -10,4 +10,4 @@ service:
   name: app-basics-test
 
 ingress:
-  host: dev.labchivo.com
+  host: dev.icarus-lab.com
