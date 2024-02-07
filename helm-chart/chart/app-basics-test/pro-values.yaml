@@ -9,4 +9,4 @@ service:
   name: pro-app-basics-test
 
 ingress:
-  host: pro.app-basics-test.local
+  host: pro.app.lab.com

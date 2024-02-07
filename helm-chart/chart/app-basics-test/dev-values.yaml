@@ -9,4 +9,4 @@ service:
   name: dev-app-basics-test
 
 ingress:
-  host: dev.app-basics-test.local
+  host: dev.app.lab.com

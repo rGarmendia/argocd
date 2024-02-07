@@ -9,4 +9,4 @@ service:
   name: staging-app-basics-test
 
 ingress:
-  host: staging.app-basics-test.local
+  host: staging.app.lab.com
