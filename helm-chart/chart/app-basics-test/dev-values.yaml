@@ -10,4 +10,4 @@ service:
   name: app-basics-test
 
 ingress:
-  host: dev.app.lab.com
+  host: dev-app.lab.com
