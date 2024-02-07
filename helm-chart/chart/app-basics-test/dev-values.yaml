@@ -11,3 +11,4 @@ service:
 
 ingress:
   host: dev.icarus-lab.org
+  path: /dev

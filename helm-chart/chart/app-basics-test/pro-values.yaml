@@ -9,4 +9,4 @@ service:
   name: app-basics-test
 
 ingress:
-  host: dev.icarus-lab.org
+  host: pro.icarus-lab.org

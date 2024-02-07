@@ -22,5 +22,4 @@ service:
 
 ingress:
   name: app-basics-test-ingress
-  host: app-basics-test.local
   path: /
