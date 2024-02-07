@@ -9,4 +9,4 @@ service:
   name: app-basics-test
 
 ingress:
-  host: pro-app.lab.com
+  host: pro-app.labchivo.com
