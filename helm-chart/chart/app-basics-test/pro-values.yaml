@@ -3,7 +3,7 @@ namespace: pro
 deployment:
   replicas: 2
   container:
-    image: us-docker.pkg.pro/google-samples/containers/gke/hello-app:2.0
+    image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
 
 service:
   name: app-basics-test
