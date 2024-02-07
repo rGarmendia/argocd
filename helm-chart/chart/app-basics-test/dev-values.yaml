@@ -12,7 +12,6 @@ service:
 ingress:
   host: dev.icarus-lab.org
   path: /dev
-  certificate: letsencrypt-dev
 
 issuer:
   name: letsencrypt-dev
@@ -22,3 +21,4 @@ issuer:
     name: letsencrypt-dev
   ingress:
     class: ingress-nginx
+  secretName: letsencrypt-dev

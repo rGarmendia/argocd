@@ -20,3 +20,4 @@ issuer:
     name: letsencrypt-staging
   ingress:
     class: ingress-nginx
+  secretName: letsencrypt-staging
