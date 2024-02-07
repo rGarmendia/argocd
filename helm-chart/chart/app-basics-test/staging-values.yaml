@@ -10,3 +10,5 @@ service:
 
 ingress:
   host: dev.icarus-lab.org
+  name: app-basics-test-ingress
+  path: /dev
