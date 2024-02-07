@@ -5,8 +5,9 @@ deployment:
   container:
     image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
 
+
 service:
-  name: dev-app-basics-test
+  name: app-basics-test
 
 ingress:
   host: dev.app.lab.com

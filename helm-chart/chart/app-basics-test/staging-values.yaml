@@ -6,7 +6,7 @@ deployment:
     image: us-docker.pkg.staging/google-samples/containers/gke/hello-app:2.0
 
 service:
-  name: staging-app-basics-test
+  name: app-basics-test
 
 ingress:
   host: staging.app.lab.com
