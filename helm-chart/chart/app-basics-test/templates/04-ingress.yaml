@@ -3,9 +3,6 @@ kind: Ingress
 metadata:
   name: {{ .Values.ingress.name }}
   namespace: {{ .Values.namespace }}
-  annotations:
-    kubernetes.io/ingress.class: ingress-nginx
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: ingress-nginx
   rules:
